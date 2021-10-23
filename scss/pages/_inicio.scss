@@ -1,0 +1,156 @@
+//File: _inicio.sass
+/* -------------------- INICIO ESTILOS PROPIOS -------------------- */
+
+.headerInicio {
+    border-bottom: 3px solid $colorInicio1;
+    .nav-link.active, .nav-link:hover {
+        color: $colorInicio1;
+    }
+    .logoInicio a {
+        animation-name: logoInicio;
+        @keyframes logoInicio {
+            0% {
+                color: $colorInicio1;
+            }
+            25% {
+                color: $blanco;
+            }
+            50% {
+                color: $blanco;
+            }
+            100% {
+                color: $colorInicio1;
+            }
+        }
+    }
+    .navbar-toggler {
+        background-color: $colorInicio1;
+    }
+}
+
+/* -------------------- BANNER INICIO -------------------- */
+
+.bannerInicio {
+    background-image: url(../img/gorillaz-banner-inicio.jpg);
+    background-position: right;
+    h2 {
+        text-align: left;
+        margin: -39px 0 36px; 
+    }
+    h3 {
+        font-size: 25px;
+        margin-bottom: 17px;
+        text-shadow: 3px 3px $negro;
+        font-weight: bold; 
+    }
+    .containerBanner {
+        width: 510px; 
+        display: grid;
+        grid-template-areas: "article article"
+                             "article article";
+        grid-column-gap: 20px;
+        grid-row-gap: 20px; 
+        h4 {
+            font-size: 20px;
+            font-weight: bold; }
+        article {
+            color: $negro;
+            background-image: url(../img/tour.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: all .2s ease-in-out;
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
+            .fecha {
+                background-color: $blanco;
+                padding: 10px 15px 10px 13px;
+                margin-left: 11px;
+                border-radius: 0 10px 10px 0;
+                box-shadow: 3px 3px $negro;
+                position: relative;
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                }
+                a {
+                    color: $blanco;
+                    background-color: $colorInicio2;
+                    text-transform: uppercase;
+                    padding: 4px 10px 6px;
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                    border-radius: 10px;
+                    margin-top: 8px; 
+                    &:hover {
+                        background-color: $negro; 
+                    }
+                }
+
+            }
+            
+        }
+    } 
+}
+
+/* -------------------- SEPARADOR INICIO -------------------- */
+
+.separadorInicio {
+    background-image: url(../img/gorillaz-separador.jpg); }
+  
+.separadorFooterInicio {
+    background-image: url(../img/gorillaz-separador-footer-inicio.png);
+    background-position: left; }
+
+/* -------------------- NOTICIAS INICIO -------------------- */
+
+.noticiasInicio article h3 {
+    background-image: linear-gradient(to top, $colorInicio1, $colorInicio2);
+}
+.noticiasInicio article time {
+    background-color: $colorInicio2;
+}
+.noticiasInicio .seguirLeyendo a {
+        background-color: $colorInicio1;
+}
+.verTodasLasNoticias {
+    text-align: center;
+    margin-bottom: 40px;
+    height: 50px;
+    a {
+        background-color: $negro !important;
+        color: $blanco;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        border-radius: 10px;
+        transition: 0.5s;
+        &:hover {
+            background-color: $colorInicio2 !important;
+            padding: 20px 30px;
+        }
+    }  
+}
+
+/* -------------------- TIENDAS INICIO -------------------- */
+
+.tiendas {
+    img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        &:hover {
+            transform: scaleX(-1); 
+        }
+    }
+}
+  
+/* -------------------- FOOTER INICIO -------------------- */  
+
+.footerInicio {
+    background-color: $colorInicio2;
+}
+.enviarInicio {
+    background-color: $colorInicio1;
+}

@@ -1,0 +1,120 @@
+//File: _biografia.sass
+/* -------------------- BIOGRAFÍA ESTILOS PROPIOS -------------------- */
+
+.headerBiografia {
+    border-bottom: 3px solid $colorBio1;
+    .nav-link.active, .nav-link:hover {
+        color: $colorBio1;
+    }
+    .logoBiografia a {
+        animation-name: logoBiografia;
+        @keyframes logoBiografia {
+            0% {
+                color: $colorBio1;
+            }
+            25% {
+                color: $blanco;
+            }
+            50% {
+                color: $blanco;
+            }
+            100% {
+                color: $colorBio1;
+            }
+        }
+    }
+    .navbar-toggler {
+        background-color: $colorBio1;
+    }
+}
+
+/* -------------------- BANNER BIOGRAFÍA -------------------- */
+
+.bannerBiografia {
+    background-image: url(../img/gorillaz-banner-biografia.jpg);
+}
+
+/* -------------------- INTEGRANTES -------------------- */
+
+.historia {
+    position: relative;
+    article {
+        color: $blanco;
+    }
+    .imagenHistoria{
+        background-color: #DCA318;
+        position: relative;
+        overflow: hidden;
+        img {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        }
+    }
+    .imgDamon {
+        border-top-left-radius: 20px;
+    }
+    .imgJamie {
+        border-top-right-radius: 20px;
+    }
+    p{
+        padding-bottom: 40px !important;
+        background-color: $colorBio3;
+        line-height: 2
+    }
+}
+
+.integrantes {
+    article {
+        margin-bottom: 40px;
+        position: relative;
+        .integrante {
+            background-color: $colorBio3;
+            color: $blanco;
+            height: 100%;
+            border-radius: 20px 20px 0 0;
+            img {
+                width: 100%;
+                border-radius: 20px 20px 0 0;
+            }
+            h3 {
+                font-family: $gorillaz;
+                font-size: 90px;
+                letter-spacing: 8px;
+                text-align: center;
+                text-shadow: 5px 5px $negro;
+                margin: -120px 0 40px 0;
+            }
+            p {
+                line-height: 26px;
+                margin-bottom: 20px;
+                line-height: 1.8;
+                span {
+                    background-color: $colorBio1;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    color: $negro;
+                    font-weight: bold;
+                    margin-right: 5px;
+                    border-radius: 5px;
+                }
+            }
+
+        }
+    }
+}
+
+/* -------------------- SEPARADOR BIOGRAFÍA -------------------- */
+  
+.separadorBiografia {
+    background-image: url(../img/gorillaz-separador-biografia.png);
+}
+
+/* -------------------- FOOTER BIOGRAFÍA -------------------- */  
+
+.footerBiografia {
+    background-color: $colorBio2;
+}
+.enviarBiografia{
+    background-color: $colorBio1;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://gorillaz.com.es/</loc>
+  <lastmod>2021-10-20T00:54:20+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gorillaz.com.es/index.html</loc>
+  <lastmod>2021-10-20T00:54:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gorillaz.com.es/tour-2022-conciertos-gorillaz.html</loc>
+  <lastmod>2021-10-20T00:54:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gorillaz.com.es/noticias-novedades-gorillaz.html</loc>
+  <lastmod>2021-10-20T00:54:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gorillaz.com.es/gorillaz/biografia-historia-gorillaz.html</loc>
+  <lastmod>2021-10-20T00:54:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gorillaz.com.es/gorillaz/discografia-completa-gorillaz.html</loc>
+  <lastmod>2021-10-20T00:54:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+</urlset>

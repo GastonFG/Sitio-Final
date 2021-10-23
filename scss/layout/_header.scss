@@ -1,0 +1,44 @@
+//File: _header.sass
+/* -------------------- HEADER -------------------- */
+
+header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    .logo {
+        font-family: $gorillaz;
+        font-size: 50px;
+        margin: -1px 0 7px;
+        a {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            &:hover {
+                color: $blanco !important;
+            }
+        }   
+    }
+    .navbar {
+        list-style: none;
+        padding: 0 25px;
+        background-color: $negro;
+        span {
+            line-height: 1.2;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        .nav-link {
+            color: $blanco;
+            background-image: url(../img/gorillaz-vin.png);
+            background-repeat: no-repeat;
+            margin-right: 25px;
+            padding: 0 0 0 30px !important;
+            transition: 0.2s;
+            display: inline-block;
+            &:focus {
+                color: $blanco;
+            }
+        }
+    }
+}

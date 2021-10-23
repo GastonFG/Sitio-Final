@@ -1,0 +1,14 @@
+@import "base/variables";
+@import "base/base";
+
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+@import "pages/inicio";
+@import "pages/tour";
+@import "pages/noticias";
+@import "pages/biografia";
+@import "pages/discografia";
+
+@import "media-queries/media-queries";

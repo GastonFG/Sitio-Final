@@ -1,0 +1,179 @@
+//File: _media-queries.sass
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media (max-width: 1200px) {
+    .tour article .fechaTour {
+        height: 90%;
+    }
+    .fechaTour img {
+        height: 135px;
+        margin-left: -104px;
+        top: 25%;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        .navbar-collapse {
+            padding: 15px 25px 5px 0;
+            position: absolute;
+            background-color: $negro;
+            border-bottom-left-radius: 15px;
+            top: 68px;
+            z-index: 2;
+            right: 0;
+            .nav-item {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    main {
+        margin-bottom: -22px !important;
+        .banner {
+            margin-top: 68px;
+        }
+        .contenidoPrincipal h2 {
+            font-size: 70px;
+            padding: 10px 0;
+        }
+    }
+    .bannerDiscografia h1 {
+        font-size: 90px;
+    }
+    .historia p {
+        border-radius: 20px 20px 0 0;
+    }
+    footer {
+        position: initial;
+        .logoFooter .logoF {
+            text-align: center;
+            margin-bottom: 0 !important;
+        }
+        .social {
+            padding-left: 0 !important;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .formularioFooter {
+            text-align: center !important;
+            input, textarea {
+                width: 70%;
+            }
+        }
+    } 
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 15px;
+    }
+    .banner {
+        background-image: none;
+        margin-top: 0;
+        height: auto;
+        h1, h2 {
+            margin: -25px 0 15px;
+            text-align: center;
+            font-size: 70px;
+        }
+        time {
+            font-weight: bold;
+        }
+    }
+    .bannerInicio {
+        background-color: $colorInicio1;
+        .containerBanner {
+            grid-template-areas: "article" "article" "article" "article";
+            width: auto;
+            margin-bottom: 20px;
+        }
+        h3 {
+            text-align: center;
+        }
+        h4 {
+            font-size: 23px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .bannerNoticias {
+        background-image: linear-gradient(to top, $colorNoticias1, $colorNoticias2);
+    }
+    .bannerTour {
+        background-image: linear-gradient(to top, $colorTour1, $colorTour2);
+    }
+    .bannerBiografia {
+        background-image: linear-gradient(to top, $colorBio1, $colorBio2);
+        h1 {
+            padding-top: 18px;
+            font-size: 55px;
+        }
+    }
+    .bannerDiscografia {
+        background-image: linear-gradient(to top, $colorDiscog1, $colorDiscog2);
+        h1 {
+            padding: 27px 0 9px;
+            font-size: 40px;
+        }
+    }
+    ol {
+        padding-left: 0;
+    }
+    .contenidoPrincipal {
+        padding: 0 !important;
+    }
+    .noticiasPagina {
+        margin-top: 35px;
+        h2 {
+            display: none;
+        }
+    }  
+    .noticias article {
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .integrantes {
+        h2 {
+            font-size: 40px !important; 
+        }
+        h3 {
+            font-size: 50px !important; 
+            margin: -65px 0 40px 0 !important; 
+        }
+        p span {
+            display: table;
+            margin-bottom: 5px;
+        }
+    }
+    .fecha img {
+        height: 123px;
+        width: auto;
+        left: 50% !important;
+        margin-left: -115px;
+    }
+    .fechaTour img {
+        height: 170px;
+        margin-left: -130px;
+        top: 12%;
+    }
+    footer {
+        .logoFooter .logoF {
+            font-size: 80px !important;
+        }
+        input, textarea {
+            width: 100% !important;
+        }
+    }
+}
+
+@media (min-width: 1380px) {
+    .imgDamon img, .imgJamie img  {
+        width: 75% !important;
+    }
+    .imgJamie img  {
+        right: 0;
+    }   
+}

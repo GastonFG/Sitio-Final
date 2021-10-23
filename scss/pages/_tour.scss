@@ -1,0 +1,114 @@
+//File: _tour.sass
+/* -------------------- TOUR ESTILOS PROPIOS -------------------- */
+
+.headerTour {
+    border-bottom: 3px solid $colorTour1;
+    .nav-link.active, .nav-link:hover {
+        color: $colorTour1;
+    }
+    .logoTour a {
+        animation-name: logoTour;
+        @keyframes logoTour {
+            0% {
+                color: $colorTour1;
+            }
+            25% {
+                color: $blanco;
+            }
+            50% {
+                color: $blanco;
+            }
+            100% {
+                color: $colorTour1;
+            }
+        }
+    }
+    .navbar-toggler {
+        background-color: $colorTour1;
+    }
+}
+
+/* -------------------- BANNER TOUR -------------------- */
+
+.bannerTour {
+    background-image: url(../img/gorillaz-banner-tour.jpg);
+}
+
+/* -------------------- FECHAS TOUR -------------------- */
+
+.tour {
+    padding-bottom: 30px;
+    article {
+        .fechaTour {
+            background-color: $colorTour2;
+            color: $blanco;
+            padding: 20px 30px;
+            border-radius: 0 10px 10px 0;
+            background-image: url(../img/tour2.png);
+            background-repeat: repeat-y;
+            box-shadow: 5px 5px $negro;
+            margin-bottom: 25px;
+            transition: all .2s ease-in-out;
+            position: relative;
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
+            img {
+                position: absolute;
+                left: 50% !important;
+                height: 135px;
+                margin-left: -104px;
+                top: 20%;
+            }
+            time {
+                background-color: $blanco;
+                color: $negro;
+                font-weight: bold;
+                padding: 1px 20px 3px;
+                border-radius: 10px;
+            }
+            h3 {
+                font-size: 24px;
+                text-align: center;
+                padding: 15px 0 10px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 18px;
+                text-align: center;
+            }
+            a {
+                color: $blanco;
+                background-color: $colorTour1;
+                text-transform: uppercase;
+                padding: 15px 5px;
+                width: 100%;
+                text-align: center;
+                border-radius: 10px;
+                margin-top: 15px;
+                font-weight: bold;
+                font-size: 20px;
+                display: block;
+                &:hover {
+                    background-color: $blanco;
+                    color: $negro;
+                }
+            }
+        }
+    }
+}
+
+/* -------------------- SEPARADOR TOUR -------------------- */
+  
+.separadorTour {
+    background-image: url(../img/gorillaz-separador-tour.png);
+}
+
+/* -------------------- FOOTER TOUR -------------------- */  
+
+.footerTour {
+    background-color: $colorTour2;
+}
+.enviarTour {
+    background-color: $colorTour1;
+}

@@ -1,0 +1,27 @@
+//File: _base.sass
+
+@font-face {
+    font-family: 'Gorillaz1';
+    src: url('../fonts/Gorillaz1.eot');
+    src: url('../fonts/Gorillaz1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gorillaz1.woff2') format('woff2'),
+        url('../fonts/Gorillaz1.woff') format('woff'),
+        url('../fonts/Gorillaz1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*, .contenedor, .row, p, h3, h4, .container-fluid {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $blanco;
+    color: $negro;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    transition: color 0.2s linear, background-color 0.5s linear;
+} 
