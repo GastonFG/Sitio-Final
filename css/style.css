@@ -12,14 +12,59 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: #ffffff;
   color: #000000;
   font-family: 'Open Sans', sans-serif; }
+  body.preloadSite {
+    overflow: hidden; }
+
+.preloadWrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9; }
+  .preloadWrapper .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 120px; }
 
 a {
   text-decoration: none;
   transition: color 0.2s linear, background-color 0.5s linear; }
+
+#video button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffffff; }
+
+#toTop {
+  position: fixed;
+  bottom: 3px;
+  right: 25px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  margin: -15px 0 0 -15px;
+  transform: rotate(45deg);
+  border-right: none;
+  border-bottom: none;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); }
+  #toTop:hover {
+    border-left: 7px solid #ffffff;
+    border-top: 7px solid #ffffff; }
+
+.modal {
+  overflow-y: scroll; }
 
 /* -------------------- HEADER -------------------- */
 header {
@@ -48,12 +93,14 @@ header {
       color: #ffffff;
       background-image: url(../img/gorillaz-vin.png);
       background-repeat: no-repeat;
-      margin-right: 25px;
+      margin-left: 25px;
       padding: 0 0 0 30px !important;
       transition: 0.2s;
       display: inline-block; }
       header .navbar .nav-link:focus {
         color: #ffffff; }
+  header .video {
+    margin-left: 25px; }
 
 /* -------------------- MAIN -------------------- */
 main {
@@ -113,7 +160,7 @@ footer {
     padding: 65px 15px 10px;
     background-image: url(../img/transparencia-footer.png);
     background-repeat: repeat-x;
-    background-position: bottom; }
+    background-position: right bottom; }
     footer .containerFooter .logoFooter .logoF {
       font-family: Gorillaz1;
       font-size: 125px;
@@ -164,6 +211,9 @@ footer {
       text-decoration: underline; }
 
 /* -------------------- INICIO ESTILOS PROPIOS -------------------- */
+.preloadInicio {
+  background-color: #631031; }
+
 .headerInicio {
   border-bottom: 3px solid #C1043E; }
   .headerInicio .nav-link.active, .headerInicio .nav-link:hover {
@@ -284,7 +334,14 @@ footer {
 .enviarInicio {
   background-color: #C1043E; }
 
+.toTopInicio {
+  border-left: 7px solid #C1043E;
+  border-top: 7px solid #C1043E; }
+
 /* -------------------- TOUR ESTILOS PROPIOS -------------------- */
+.preloadTour {
+  background-color: #001964; }
+
 .headerTour {
   border-bottom: 3px solid #003FF6; }
   .headerTour .nav-link.active, .headerTour .nav-link:hover {
@@ -371,7 +428,14 @@ footer {
 .enviarTour {
   background-color: #003FF6; }
 
+.toTopTour {
+  border-left: 7px solid #003FF6;
+  border-top: 7px solid #003FF6; }
+
 /* -------------------- NOTICIAS ESTILOS PROPIOS -------------------- */
+.preloadNoticias {
+  background-color: #3A086B; }
+
 .headerNoticias {
   border-bottom: 3px solid #923CEB; }
   .headerNoticias .nav-link.active, .headerNoticias .nav-link:hover {
@@ -462,7 +526,14 @@ footer {
 .enviarNoticias {
   background-color: #923CEB; }
 
+.toTopNoticias {
+  border-left: 7px solid #923CEB;
+  border-top: 7px solid #923CEB; }
+
 /* -------------------- BIOGRAFÍA ESTILOS PROPIOS -------------------- */
+.preloadBiografia {
+  background-color: #7B5A08; }
+
 .headerBiografia {
   border-bottom: 3px solid #DEA50D; }
   .headerBiografia .nav-link.active, .headerBiografia .nav-link:hover {
@@ -550,7 +621,14 @@ footer {
 .enviarBiografia {
   background-color: #DEA50D; }
 
+.toTopBiografia {
+  border-left: 7px solid #DEA50D;
+  border-top: 7px solid #DEA50D; }
+
 /* -------------------- DISCGRAFÍA ESTILOS PROPIOS -------------------- */
+.preloadDiscografia {
+  background-color: #316321; }
+
 .headerDiscografia {
   border-bottom: 3px solid #54AA3D; }
   .headerDiscografia .nav-link.active, .headerDiscografia .nav-link:hover {
@@ -676,6 +754,10 @@ footer {
 .enviarDiscografia {
   background-color: #54AA3D; }
 
+.toTopDiscografia {
+  border-left: 7px solid #54AA3D;
+  border-top: 7px solid #54AA3D; }
+
 /* -------------------- MEDIA QUERIES -------------------- */
 @media (max-width: 1200px) {
   .tour article .fechaTour {
@@ -687,7 +769,7 @@ footer {
 
 @media (max-width: 992px) {
   header .navbar-collapse {
-    padding: 15px 25px 5px 0;
+    padding: 15px 25px 15px 0;
     position: absolute;
     background-color: #000000;
     border-bottom-left-radius: 15px;
@@ -696,6 +778,8 @@ footer {
     right: 0; }
     header .navbar-collapse .nav-item {
       margin-bottom: 10px; }
+  header .video {
+    margin-left: 60px; }
   main {
     margin-bottom: -22px !important; }
     main .banner {
@@ -724,6 +808,8 @@ footer {
 @media (max-width: 576px) {
   body {
     font-size: 15px; }
+  #toTop {
+    bottom: 0px; }
   .banner {
     background-image: none;
     margin-top: 0;

@@ -1,6 +1,9 @@
 //File: _biografia.sass
 /* -------------------- BIOGRAFÍA ESTILOS PROPIOS -------------------- */
 
+.preloadBiografia {
+    background-color: $colorBio2;
+}
 .headerBiografia {
     border-bottom: 3px solid $colorBio1;
     .nav-link.active, .nav-link:hover {
@@ -117,4 +120,8 @@
 }
 .enviarBiografia{
     background-color: $colorBio1;
+}
+.toTopBiografia {
+    border-left: 7px solid $colorBio1;
+    border-top: 7px solid $colorBio1;
 }

@@ -1,6 +1,9 @@
 //File: _inicio.sass
 /* -------------------- INICIO ESTILOS PROPIOS -------------------- */
 
+.preloadInicio {
+    background-color: $colorInicio2;
+}
 .headerInicio {
     border-bottom: 3px solid $colorInicio1;
     .nav-link.active, .nav-link:hover {
@@ -153,4 +156,8 @@
 }
 .enviarInicio {
     background-color: $colorInicio1;
+}
+.toTopInicio {
+    border-left: 7px solid $colorInicio1;
+    border-top: 7px solid $colorInicio1;
 }

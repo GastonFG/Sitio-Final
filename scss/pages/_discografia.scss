@@ -1,6 +1,9 @@
 //File: _discografia.sass
 /* -------------------- DISCGRAFÍA ESTILOS PROPIOS -------------------- */
 
+.preloadDiscografia {
+    background-color: $colorDiscog2;
+}
 .headerDiscografia {
     border-bottom: 3px solid $colorDiscog1;
     .nav-link.active, .nav-link:hover {
@@ -102,7 +105,7 @@
     color: $blanco;
     text-align: center;
     .modal-header {
-        background-color:  $colorDiscog3;
+        background-color: $colorDiscog3;
         .modal-title {
             font-family: $gorillaz;
             font-weight: normal;
@@ -159,4 +162,8 @@
 }
 .enviarDiscografia {
     background-color: $colorDiscog1;
+}
+.toTopDiscografia {
+    border-left: 7px solid $colorDiscog1;
+    border-top: 7px solid $colorDiscog1;
 }

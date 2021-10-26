@@ -32,7 +32,7 @@ header {
             color: $blanco;
             background-image: url(../img/gorillaz-vin.png);
             background-repeat: no-repeat;
-            margin-right: 25px;
+            margin-left: 25px;
             padding: 0 0 0 30px !important;
             transition: 0.2s;
             display: inline-block;
@@ -40,5 +40,8 @@ header {
                 color: $blanco;
             }
         }
+    }
+    .video {
+        margin-left: 25px;
     }
 }

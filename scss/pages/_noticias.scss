@@ -1,6 +1,9 @@
 //File: _noticias.sass
 /* -------------------- NOTICIAS ESTILOS PROPIOS -------------------- */
 
+.preloadNoticias {
+    background-color: $colorNoticias2;
+}
 .headerNoticias {
     border-bottom: 3px solid $colorNoticias1;
     .nav-link.active, .nav-link:hover {
@@ -119,4 +122,8 @@
 }
 .enviarNoticias {
     background-color: $colorNoticias1;
+}
+.toTopNoticias {
+    border-left: 7px solid $colorNoticias1;
+    border-top: 7px solid $colorNoticias1;
 }

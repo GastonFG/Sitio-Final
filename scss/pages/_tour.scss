@@ -1,6 +1,9 @@
 //File: _tour.sass
 /* -------------------- TOUR ESTILOS PROPIOS -------------------- */
 
+.preloadTour {
+    background-color: $colorTour2;
+}
 .headerTour {
     border-bottom: 3px solid $colorTour1;
     .nav-link.active, .nav-link:hover {
@@ -111,4 +114,8 @@
 }
 .enviarTour {
     background-color: $colorTour1;
+}
+.toTopTour {
+    border-left: 7px solid $colorTour1;
+    border-top: 7px solid $colorTour1;
 }
