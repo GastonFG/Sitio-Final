@@ -235,7 +235,7 @@ footer {
 
 /* -------------------- BANNER INICIO -------------------- */
 .bannerInicio {
-  background-image: url(../img/gorillaz-banner-inicio.jpg);
+  background-image: url(../img/banner-inicio-gorillaz.jpg);
   background-position: right; }
   .bannerInicio h2 {
     text-align: left;
@@ -288,10 +288,10 @@ footer {
 
 /* -------------------- SEPARADOR INICIO -------------------- */
 .separadorInicio {
-  background-image: url(../img/gorillaz-separador.jpg); }
+  background-image: url(../img/separador-gorillaz.jpg); }
 
 .separadorFooterInicio {
-  background-image: url(../img/gorillaz-separador-footer-inicio.png);
+  background-image: url(../img/separador-footer-inicio-gorillaz.png);
   background-position: left; }
 
 /* -------------------- NOTICIAS INICIO -------------------- */
@@ -363,7 +363,7 @@ footer {
 
 /* -------------------- BANNER TOUR -------------------- */
 .bannerTour {
-  background-image: url(../img/gorillaz-banner-tour.jpg); }
+  background-image: url(../img/banner-tour-gorillaz.jpg); }
 
 /* -------------------- FECHAS TOUR -------------------- */
 .tour {
@@ -419,7 +419,7 @@ footer {
 
 /* -------------------- SEPARADOR TOUR -------------------- */
 .separadorTour {
-  background-image: url(../img/gorillaz-separador-tour.png); }
+  background-image: url(../img/separador-tour-gorillaz.png); }
 
 /* -------------------- FOOTER TOUR -------------------- */
 .footerTour {
@@ -457,7 +457,7 @@ footer {
 
 /* -------------------- BANNER NOTICIAS -------------------- */
 .bannerNoticias {
-  background-image: url(../img/gorillaz-banner-noticias.jpg); }
+  background-image: url(../img/banner-noticias-gorillaz.jpg); }
 
 /* -------------------- NOTICIAS -------------------- */
 .noticias article {
@@ -517,7 +517,7 @@ footer {
 
 /* -------------------- SEPARADOR NOTICIAS -------------------- */
 .separadorNoticias {
-  background-image: url(../img/gorillaz-separador-noticias.png); }
+  background-image: url(../img/separador-noticias-gorillaz.png); }
 
 /* -------------------- FOOTER NOTICIAS -------------------- */
 .footerNoticias {
@@ -555,7 +555,7 @@ footer {
 
 /* -------------------- BANNER BIOGRAFÍA -------------------- */
 .bannerBiografia {
-  background-image: url(../img/gorillaz-banner-biografia.jpg); }
+  background-image: url(../img/banner-biografia-gorillaz.jpg); }
 
 /* -------------------- INTEGRANTES -------------------- */
 .historia {
@@ -612,7 +612,7 @@ footer {
 
 /* -------------------- SEPARADOR BIOGRAFÍA -------------------- */
 .separadorBiografia {
-  background-image: url(../img/gorillaz-separador-biografia.png); }
+  background-image: url(../img/separador-biografia-gorillaz.png); }
 
 /* -------------------- FOOTER BIOGRAFÍA -------------------- */
 .footerBiografia {
@@ -650,7 +650,7 @@ footer {
 
 /* -------------------- BANNER DISCGRAFÍA -------------------- */
 .bannerDiscografia {
-  background-image: url(../img/gorillaz-banner-discografia.jpg); }
+  background-image: url(../img/banner-discografia-gorillaz.jpg); }
 
 /* -------------------- DISCOS -------------------- */
 .discografia article {
@@ -745,7 +745,7 @@ footer {
 
 /* -------------------- SEPARADOR DISCGRAFÍA -------------------- */
 .separadorDiscografia {
-  background-image: url(../img/gorillaz-separador-discografia.png); }
+  background-image: url(../img/separador-discografia-gorillaz.png); }
 
 /* -------------------- FOOTER DISCGRAFÍA -------------------- */
 .footerDiscografia {

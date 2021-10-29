@@ -33,3 +33,5 @@ $(document).scroll(function () {
         $('#toTop').fadeOut();
     }
 });
+// Iniciar Librería AOS
+AOS.init();
