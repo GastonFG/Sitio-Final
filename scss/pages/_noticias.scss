@@ -1,42 +1,6 @@
 //File: _noticias.sass
 /* -------------------- NOTICIAS ESTILOS PROPIOS -------------------- */
 
-.preloadNoticias {
-    background-color: $colorNoticias2;
-}
-.headerNoticias {
-    border-bottom: 3px solid $colorNoticias1;
-    .nav-link.active, .nav-link:hover {
-        color: $colorNoticias1;
-    }
-    .logoNoticias a {
-        animation-name: logoNoticias;
-        @keyframes logoNoticias {
-            0% {
-                color: $colorNoticias1;
-            }
-            25% {
-                color: $blanco;
-            }
-            50% {
-                color: $blanco;
-            }
-            100% {
-                color: $colorNoticias1;
-            }
-        }
-    }
-    .navbar-toggler {
-        background-color: $colorNoticias1;
-    }
-}
-
-/* -------------------- BANNER NOTICIAS -------------------- */
-
-.bannerNoticias {
-    background-image: url(../img/banner-noticias-gorillaz.jpg);
-}
-
 /* -------------------- NOTICIAS -------------------- */
 
 .noticias {
@@ -46,47 +10,47 @@
             width: 100%;
         }
         h3 {
-            color: $blanco;
-            font-size: 23px;
             clear: both;
+            color: $blanco;
             border-top-right-radius: 10px;
+            font-size: 23px;
         }
         time {
-            font-size: 14px;
-            color: $blanco;
             float: left;
+            color: $blanco;
             border-radius: 10px 10px 0 0;
+            font-size: 14px;
         }
         p {
-            background-color: #EAEAEA;
+            background-color: $colorNoticias3;
             border-radius: 0 0 10px 10px;
         }
         .seguirLeyendo {
-            text-align: center;
             height: 65px;
+            text-align: center;
             a {
-                color: $blanco;
-                padding: 10px 20px;
-                border-radius: 0 0 10px 10px;
                 display: inline-block;
+                padding: 10px 20px;
+                color: $blanco;
+                border-radius: 0 0 10px 10px;
                 transition: 0.5s;
                 &:hover {
-                    background-color: $negro;
                     padding: 20px;
+                    background-color: $negro;
                 }
             }
         }
     }
     .paginado {
         grid-area: paginado;
-        list-style: none;
-        margin-bottom: 50px;
         display: flex;
         flex-basis: 100%;
+        margin-bottom: 50px;
         justify-content: center;
+        list-style: none;
         li a {
-            color: $blanco;
             background-color: $colorNoticias1;
+            color: $blanco;
             border-radius: 10px;
             &:hover {
                 background-color: $colorNoticias2;
@@ -107,23 +71,4 @@
     .seguirLeyendo a {
         background-color: $colorNoticias1;
     }
-}
-
-/* -------------------- SEPARADOR NOTICIAS -------------------- */
-  
-.separadorNoticias {
-    background-image: url(../img/separador-noticias-gorillaz.png);
-}
-
-/* -------------------- FOOTER NOTICIAS -------------------- */  
-
-.footerNoticias {
-    background-color: $colorNoticias2;
-}
-.enviarNoticias {
-    background-color: $colorNoticias1;
-}
-.toTopNoticias {
-    border-left: 7px solid $colorNoticias1;
-    border-top: 7px solid $colorNoticias1;
 }

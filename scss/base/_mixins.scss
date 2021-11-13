@@ -1,0 +1,109 @@
+//File: _mixins.sass
+
+//-------------------- BANNER --------------------
+
+@mixin banner($bannerPagina) {
+    .banner#{$bannerPagina} {
+    position: relative;
+    margin-top: 68px;
+    padding: 25px;
+    height: 525px;
+    background-image: url(../img/banner-#{$bannerPagina}-gorillaz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $blanco;
+        h1, h2 {
+            margin: -25px 0 15px;
+            font-family: $gorillaz;
+            font-size: 110px;
+            letter-spacing: 8px;
+            text-shadow: 5px 5px $negro;
+        }
+    }
+}
+@include banner("Inicio");
+@include banner("Tour");
+@include banner("Noticias");
+@include banner("Biografia");
+@include banner("Discografia");
+@include banner("404");
+
+//-------------------- SEPARADOR --------------------
+
+@mixin separador($separadorPagina) {
+    .separadorFooter#{$separadorPagina} {
+        height: 410px;
+        background-image: url(../img/separador-#{$separadorPagina}-gorillaz.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+@include separador("Inicio");
+@include separador("Tour");
+@include separador("Noticias");
+@include separador("Biografia");
+@include separador("Discografia");
+@include separador("404");
+
+//-------------------- COLORES --------------------
+
+$color1: (
+    'Inicio': $colorInicio1,
+    'Tour': $colorTour1,
+    'Noticias': $colorNoticias1,
+    'Biografia': $colorBio1,
+    'Discografia': $colorDiscog1,
+    '404': $colorError1,
+);
+@each $pagina, $color in $color1 {
+    .header#{$pagina} {
+        border-bottom: 3px solid $color;
+        .nav-link.active, .nav-link:hover {
+            color: $color;
+        }
+        .navbar-toggler {
+            background-color: $color;
+        }
+        .logo#{$pagina} a {
+            animation-name: logo#{$pagina};
+            @keyframes logo#{$pagina} {
+                0% {
+                    color: $color;
+                }
+                25% {
+                    color: $blanco;
+                }
+                50% {
+                    color: $blanco;
+                }
+                100% {
+                    color: $color;
+                }
+            }
+        }
+    }
+    .enviar#{$pagina} {
+        background-color: $color;
+    }
+    .toTop#{$pagina} {
+        border-color: $color !important;
+        &:hover {
+            border-color: $blanco !important;
+        }
+    }
+}
+$color2: (
+  'Inicio': $colorInicio2,
+  'Tour': $colorTour2,
+  'Noticias': $colorNoticias2,
+  'Biografia': $colorBio2,
+  'Discografia': $colorDiscog2,
+  '404': $colorError2,
+);
+@each $pagina, $color in $color2 {
+  .footer#{$pagina}, .preload#{$pagina} {
+    background-color: $color;
+  }
+}

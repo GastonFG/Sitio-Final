@@ -1,102 +1,66 @@
 //File: _discografia.sass
 /* -------------------- DISCGRAFÍA ESTILOS PROPIOS -------------------- */
 
-.preloadDiscografia {
-    background-color: $colorDiscog2;
-}
-.headerDiscografia {
-    border-bottom: 3px solid $colorDiscog1;
-    .nav-link.active, .nav-link:hover {
-        color: $colorDiscog1;
-    }
-    .navbar-toggler {
-        background-color: $colorDiscog1;
-    }
-    .logoDiscografia a {
-        animation-name: logoDiscografia;
-        @keyframes logoDiscografia {
-            0% {
-                color: $colorDiscog1;
-            }
-            25% {
-                color: $blanco;
-            }
-            50% {
-                color: $blanco;
-            }
-            100% {
-                color: $colorDiscog1;
-            }
-        }
-    }
-}
-
-/* -------------------- BANNER DISCGRAFÍA -------------------- */
-
-.bannerDiscografia {
-    background-image: url(../img/banner-discografia-gorillaz.jpg);
-}
-
 /* -------------------- DISCOS -------------------- */
 
 .discografia {
     article {
-        color: $blanco;
         margin-bottom: 50px;
+        color: $blanco;
         text-align: center;
         .tapaDisco {
             position: relative;
+            padding-bottom: 0 !important;
             background-color: $colorDiscog2;
             border-radius: 20px 20px 0 0;
-            padding-bottom: 0 !important;
             h3 {
+                margin-bottom: 15px;
                 font-family: $gorillaz;
                 font-size: 45px;
                 text-shadow: 4px 4px $negro;
-                margin: -10px 0 15px;
             }
             p {
-                background-color: $colorDiscog3;
-                display: inline-block;
-                padding: 3px 10px;
                 position: absolute;
                 z-index: 1;
+                display: inline-block;
+                padding: 3px 10px;
                 margin: 8px;
+                background-color: $colorDiscog3;
                 border-radius: 4px;
             }
             img {
+                position: relative;
                 width: 100%;
                 border: 3px solid $blanco;
-                position: relative;
             }
             .listadoTemas {
                 height: 65px;
                 a {
-                    color: $blanco;
+                    display: inline-block;
                     padding: 10px 20px;
+                    background-color: $colorDiscog1;
+                    color: $blanco;
                     border-radius: 0 0 10px 10px;
                     transition: 0.5s;
-                    background-color: $colorDiscog1;
-                    display: inline-block;
                     &:hover {
-                        padding:15px 20px;
+                        padding: 15px 20px;
                         background-color: $colorDiscog3;
                     }
                 }
             }
             .discoFin {
-                background-image: url(../img/transparencia-disco.png);
-                background-repeat: repeat-x;
-                width: 100%;
-                height: 20px;
                 position: absolute;
                 bottom: -20px;
                 left: 0;
+                width: 100%;
+                height: 20px;
+                background-image: url(../img/transparencia-disco.png);
+                background-repeat: repeat-x;
             }
         }
         .infoDisco {
-            background-color: $colorDiscog2;
             position: relative;
+            background-color: $colorDiscog2;
         }
     }
 }
@@ -107,11 +71,11 @@
     .modal-header {
         background-color: $colorDiscog3;
         .modal-title {
+            margin: -10px 0;
             font-family: $gorillaz;
             font-weight: normal;
             font-size: 40px;
             text-shadow: 4px 4px $negro;
-            margin: -20px 0 -10px;
         }
     }
     p {
@@ -120,23 +84,23 @@
         text-align: left;
     }
     ol {
-        list-style: none;
-        counter-reset: li;
+        width: 100%;
         display: inline-block;
         text-align: left;
-        width: 100%;
+        list-style: none;
+        counter-reset: li;
         li {
-            counter-increment: li;
             margin-bottom: 7px;
+            counter-increment: li;
             &::before {
-                content: counter(li);
-                background-color: $colorDiscog1;
-                font-weight: bold;
                 display: inline-block;
                 margin-right: 10px;
-                text-align: center;
                 width: 25px;
+                background-color: $colorDiscog1;
+                font-weight: bold;
+                text-align: center;
                 border-radius: 10px;
+                content: counter(li);
             }
         }
     }
@@ -147,23 +111,4 @@
             background-color: $colorDiscog1;  
         }
     }
-}
-
-/* -------------------- SEPARADOR DISCGRAFÍA -------------------- */
-  
-.separadorDiscografia {
-    background-image: url(../img/separador-discografia-gorillaz.png);
-}
-
-/* -------------------- FOOTER DISCGRAFÍA -------------------- */  
-
-.footerDiscografia {
-    background-color: $colorDiscog2;
-}
-.enviarDiscografia {
-    background-color: $colorDiscog1;
-}
-.toTopDiscografia {
-    border-left: 7px solid $colorDiscog1;
-    border-top: 7px solid $colorDiscog1;
 }

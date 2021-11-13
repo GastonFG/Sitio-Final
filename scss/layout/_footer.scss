@@ -11,21 +11,21 @@ footer {
         background-image: url(../img/transparencia-footer.png);
         background-repeat: repeat-x;
         background-position: right bottom;
-        .logoFooter .logoF{
+        .logoFooter .logoF {
+            margin-top: -39px;
             font-family: $gorillaz;
             font-size: 125px;
-            margin: -54px 0 15px 0;
         }
         .social {
             padding-left: 45px;
             ul {
-                list-style: none;
                 padding-left: 0;
+                list-style: none;
                 li {
                     display: inline;
-                    a img{
+                    a img {
                         transition: all 1s;
-                        &:hover{
+                        &:hover {
                             transform: rotate(360deg) scale(1.3);
                         }
                     }
@@ -33,16 +33,16 @@ footer {
             }
         }
         .imagenFooter {
-            text-align: center;
             margin-top: -10px;
+            text-align: center;
         }
         .formularioFooter {
-            text-align: right;
             margin-bottom: 25px;
+            text-align: right;
             input, textarea {
-                width: 80%;
-                padding: 3px 10px;
                 margin-bottom: 5px;
+                padding: 3px 10px;
+                width: 80%;
                 border: none;
                 font-size: 13px;
             }
@@ -53,12 +53,12 @@ footer {
                 border-radius: 10px 10px 0 0;
             }
             .enviar {
-                color: $blanco;
-                cursor: pointer;
                 padding: 10px 0;
+                color: $blanco;
                 font-weight: bold;
                 border-radius: 0 0 10px 10px;
                 transition: 0.2s linear;
+                cursor: pointer;
                 &:hover {
                     background-color: $negro;
                 }
@@ -66,10 +66,10 @@ footer {
         }
     }
     .copy {
+        padding: 10px 0;
         background-color: $negro;
         font-size: 13px;
         text-align: center;
-        padding: 10px 0;
         a {
             color: $blanco;
             text-decoration: underline;

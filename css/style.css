@@ -1,223 +1,154 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Gorillaz1';
-  src: url("../fonts/Gorillaz1.eot");
-  src: url("../fonts/Gorillaz1.eot?#iefix") format("embedded-opentype"), url("../fonts/Gorillaz1.woff2") format("woff2"), url("../fonts/Gorillaz1.woff") format("woff"), url("../fonts/Gorillaz1.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-*, .contenedor, .row, p, h3, h4, .container-fluid {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  scroll-behavior: smooth; }
-
-body {
-  background-color: #ffffff;
-  color: #000000;
-  font-family: 'Open Sans', sans-serif; }
-  body.preloadSite {
-    overflow: hidden; }
-
-.preloadWrapper {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9; }
-  .preloadWrapper .preloader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 120px; }
-
-a {
-  text-decoration: none;
-  transition: color 0.2s linear, background-color 0.5s linear; }
-
-#video button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #ffffff; }
-
-#toTop {
-  position: fixed;
-  bottom: 3px;
-  right: 25px;
-  z-index: 2;
-  width: 30px;
-  height: 30px;
-  margin: -15px 0 0 -15px;
-  transform: rotate(45deg);
-  border-right: none;
-  border-bottom: none;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); }
-  #toTop:hover {
-    border-left: 7px solid #ffffff;
-    border-top: 7px solid #ffffff; }
-
-.modal {
-  overflow-y: scroll; }
-
-/* -------------------- HEADER -------------------- */
-header {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  width: 100%; }
-  header .logo {
-    font-family: Gorillaz1;
-    font-size: 50px;
-    margin: -1px 0 7px; }
-    header .logo a {
-      animation-duration: 2s;
-      animation-iteration-count: infinite; }
-      header .logo a:hover {
-        color: #ffffff !important; }
-  header .navbar {
-    list-style: none;
-    padding: 0 25px;
-    background-color: #000000; }
-    header .navbar span {
-      line-height: 1.2; }
-    header .navbar .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
-    header .navbar .nav-link {
-      color: #ffffff;
-      background-image: url(../img/gorillaz-vin.png);
-      background-repeat: no-repeat;
-      margin-left: 25px;
-      padding: 0 0 0 30px !important;
-      transition: 0.2s;
-      display: inline-block; }
-      header .navbar .nav-link:focus {
-        color: #ffffff; }
-  header .video {
-    margin-left: 25px; }
-
-/* -------------------- MAIN -------------------- */
-main {
-  z-index: 1;
+.bannerInicio {
   position: relative;
-  margin-bottom: 280px !important; }
-  main .bordeFin {
-    background-image: url(../img/transparencia-banner.png);
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-
-/* -------------------- BANNER -------------------- */
-.banner {
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 68px;
   padding: 25px;
-  color: #ffffff;
   height: 525px;
-  background-position: center;
-  position: relative; }
-  .banner h1, .banner h2 {
-    font-family: Gorillaz1;
-    letter-spacing: 8px;
-    font-size: 110px;
-    margin: -25px 0 15px;
-    text-shadow: 5px 5px #000000; }
-
-.contenidoPrincipal {
-  padding: 0 2%;
-  background-color: #ffffff; }
-  .contenidoPrincipal h2 {
-    font-family: Gorillaz1;
-    font-size: 90px;
-    letter-spacing: 8px;
-    text-align: center;
-    padding: 15px 0 40px; }
-
-/* -------------------- SEPARADOR -------------------- */
-.separador, .separadorFooter {
+  background-image: url(../img/banner-Inicio-gorillaz.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 410px; }
-
-/* -------------------- FOOTER -------------------- */
-footer {
-  position: fixed;
-  z-index: 0;
-  bottom: 0;
   color: #ffffff; }
-  footer .containerFooter {
-    padding: 65px 15px 10px;
-    background-image: url(../img/transparencia-footer.png);
-    background-repeat: repeat-x;
-    background-position: right bottom; }
-    footer .containerFooter .logoFooter .logoF {
-      font-family: Gorillaz1;
-      font-size: 125px;
-      margin: -54px 0 15px 0; }
-    footer .containerFooter .social {
-      padding-left: 45px; }
-      footer .containerFooter .social ul {
-        list-style: none;
-        padding-left: 0; }
-        footer .containerFooter .social ul li {
-          display: inline; }
-          footer .containerFooter .social ul li a img {
-            transition: all 1s; }
-            footer .containerFooter .social ul li a img:hover {
-              transform: rotate(360deg) scale(1.3); }
-    footer .containerFooter .imagenFooter {
-      text-align: center;
-      margin-top: -10px; }
-    footer .containerFooter .formularioFooter {
-      text-align: right;
-      margin-bottom: 25px; }
-      footer .containerFooter .formularioFooter input, footer .containerFooter .formularioFooter textarea {
-        width: 80%;
-        padding: 3px 10px;
-        margin-bottom: 5px;
-        border: none;
-        font-size: 13px; }
-      footer .containerFooter .formularioFooter textarea {
-        height: 72px; }
-      footer .containerFooter .formularioFooter .primerInput {
-        border-radius: 10px 10px 0 0; }
-      footer .containerFooter .formularioFooter .enviar {
-        color: #ffffff;
-        cursor: pointer;
-        padding: 10px 0;
-        font-weight: bold;
-        border-radius: 0 0 10px 10px;
-        transition: 0.2s linear; }
-        footer .containerFooter .formularioFooter .enviar:hover {
-          background-color: #000000; }
-  footer .copy {
-    background-color: #000000;
-    font-size: 13px;
-    text-align: center;
-    padding: 10px 0; }
-    footer .copy a {
-      color: #ffffff;
-      text-decoration: underline; }
+  .bannerInicio h1, .bannerInicio h2 {
+    margin: -25px 0 15px;
+    font-family: Gorillaz;
+    font-size: 110px;
+    letter-spacing: 8px;
+    text-shadow: 5px 5px #000000; }
 
-/* -------------------- INICIO ESTILOS PROPIOS -------------------- */
-.preloadInicio {
-  background-color: #631031; }
+.bannerTour {
+  position: relative;
+  margin-top: 68px;
+  padding: 25px;
+  height: 525px;
+  background-image: url(../img/banner-Tour-gorillaz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; }
+  .bannerTour h1, .bannerTour h2 {
+    margin: -25px 0 15px;
+    font-family: Gorillaz;
+    font-size: 110px;
+    letter-spacing: 8px;
+    text-shadow: 5px 5px #000000; }
+
+.bannerNoticias {
+  position: relative;
+  margin-top: 68px;
+  padding: 25px;
+  height: 525px;
+  background-image: url(../img/banner-Noticias-gorillaz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; }
+  .bannerNoticias h1, .bannerNoticias h2 {
+    margin: -25px 0 15px;
+    font-family: Gorillaz;
+    font-size: 110px;
+    letter-spacing: 8px;
+    text-shadow: 5px 5px #000000; }
+
+.bannerBiografia {
+  position: relative;
+  margin-top: 68px;
+  padding: 25px;
+  height: 525px;
+  background-image: url(../img/banner-Biografia-gorillaz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; }
+  .bannerBiografia h1, .bannerBiografia h2 {
+    margin: -25px 0 15px;
+    font-family: Gorillaz;
+    font-size: 110px;
+    letter-spacing: 8px;
+    text-shadow: 5px 5px #000000; }
+
+.bannerDiscografia {
+  position: relative;
+  margin-top: 68px;
+  padding: 25px;
+  height: 525px;
+  background-image: url(../img/banner-Discografia-gorillaz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; }
+  .bannerDiscografia h1, .bannerDiscografia h2 {
+    margin: -25px 0 15px;
+    font-family: Gorillaz;
+    font-size: 110px;
+    letter-spacing: 8px;
+    text-shadow: 5px 5px #000000; }
+
+.banner404 {
+  position: relative;
+  margin-top: 68px;
+  padding: 25px;
+  height: 525px;
+  background-image: url(../img/banner-404-gorillaz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; }
+  .banner404 h1, .banner404 h2 {
+    margin: -25px 0 15px;
+    font-family: Gorillaz;
+    font-size: 110px;
+    letter-spacing: 8px;
+    text-shadow: 5px 5px #000000; }
+
+.separadorFooterInicio {
+  height: 410px;
+  background-image: url(../img/separador-Inicio-gorillaz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.separadorFooterTour {
+  height: 410px;
+  background-image: url(../img/separador-Tour-gorillaz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.separadorFooterNoticias {
+  height: 410px;
+  background-image: url(../img/separador-Noticias-gorillaz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.separadorFooterBiografia {
+  height: 410px;
+  background-image: url(../img/separador-Biografia-gorillaz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.separadorFooterDiscografia {
+  height: 410px;
+  background-image: url(../img/separador-Discografia-gorillaz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.separadorFooter404 {
+  height: 410px;
+  background-image: url(../img/separador-404-gorillaz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .headerInicio {
   border-bottom: 3px solid #C1043E; }
   .headerInicio .nav-link.active, .headerInicio .nav-link:hover {
     color: #C1043E; }
+  .headerInicio .navbar-toggler {
+    background-color: #C1043E; }
   .headerInicio .logoInicio a {
     animation-name: logoInicio; }
 
@@ -230,122 +161,21 @@ footer {
     color: #ffffff; }
   100% {
     color: #C1043E; } }
-  .headerInicio .navbar-toggler {
-    background-color: #C1043E; }
-
-/* -------------------- BANNER INICIO -------------------- */
-.bannerInicio {
-  background-image: url(../img/banner-inicio-gorillaz.jpg);
-  background-position: right; }
-  .bannerInicio h2 {
-    text-align: left;
-    margin: -39px 0 36px; }
-  .bannerInicio h3 {
-    font-size: 25px;
-    margin-bottom: 17px;
-    text-shadow: 3px 3px #000000;
-    font-weight: bold; }
-  .bannerInicio .containerBanner {
-    width: 510px;
-    display: grid;
-    grid-template-areas: "article article" "article article";
-    grid-column-gap: 20px;
-    grid-row-gap: 20px; }
-    .bannerInicio .containerBanner h4 {
-      font-size: 20px;
-      font-weight: bold; }
-    .bannerInicio .containerBanner article {
-      color: #000000;
-      background-image: url(../img/tour.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      transition: all .2s ease-in-out; }
-      .bannerInicio .containerBanner article:hover {
-        transform: scale(1.1, 1.1); }
-      .bannerInicio .containerBanner article .fecha {
-        background-color: #ffffff;
-        padding: 10px 15px 10px 13px;
-        margin-left: 11px;
-        border-radius: 0 10px 10px 0;
-        box-shadow: 3px 3px #000000;
-        position: relative; }
-        .bannerInicio .containerBanner article .fecha img {
-          position: absolute;
-          left: 0;
-          top: 2px; }
-        .bannerInicio .containerBanner article .fecha a {
-          color: #ffffff;
-          background-color: #631031;
-          text-transform: uppercase;
-          padding: 4px 10px 6px;
-          float: left;
-          width: 100%;
-          text-align: center;
-          border-radius: 10px;
-          margin-top: 8px; }
-          .bannerInicio .containerBanner article .fecha a:hover {
-            background-color: #000000; }
-
-/* -------------------- SEPARADOR INICIO -------------------- */
-.separadorInicio {
-  background-image: url(../img/separador-gorillaz.jpg); }
-
-.separadorFooterInicio {
-  background-image: url(../img/separador-footer-inicio-gorillaz.png);
-  background-position: left; }
-
-/* -------------------- NOTICIAS INICIO -------------------- */
-.noticiasInicio article h3 {
-  background-image: linear-gradient(to top, #C1043E, #631031); }
-
-.noticiasInicio article time {
-  background-color: #631031; }
-
-.noticiasInicio .seguirLeyendo a {
-  background-color: #C1043E; }
-
-.verTodasLasNoticias {
-  text-align: center;
-  margin-bottom: 40px;
-  height: 50px; }
-  .verTodasLasNoticias a {
-    background-color: #000000 !important;
-    color: #ffffff;
-    text-transform: uppercase;
-    padding: 15px 20px;
-    border-radius: 10px;
-    transition: 0.5s; }
-    .verTodasLasNoticias a:hover {
-      background-color: #631031 !important;
-      padding: 20px 30px; }
-
-/* -------------------- TIENDAS INICIO -------------------- */
-.tiendas img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 30px; }
-  .tiendas img:hover {
-    transform: scaleX(-1); }
-
-/* -------------------- FOOTER INICIO -------------------- */
-.footerInicio {
-  background-color: #631031; }
 
 .enviarInicio {
   background-color: #C1043E; }
 
 .toTopInicio {
-  border-left: 7px solid #C1043E;
-  border-top: 7px solid #C1043E; }
-
-/* -------------------- TOUR ESTILOS PROPIOS -------------------- */
-.preloadTour {
-  background-color: #001964; }
+  border-color: #C1043E !important; }
+  .toTopInicio:hover {
+    border-color: #ffffff !important; }
 
 .headerTour {
   border-bottom: 3px solid #003FF6; }
   .headerTour .nav-link.active, .headerTour .nav-link:hover {
     color: #003FF6; }
+  .headerTour .navbar-toggler {
+    background-color: #003FF6; }
   .headerTour .logoTour a {
     animation-name: logoTour; }
 
@@ -358,88 +188,21 @@ footer {
     color: #ffffff; }
   100% {
     color: #003FF6; } }
-  .headerTour .navbar-toggler {
-    background-color: #003FF6; }
-
-/* -------------------- BANNER TOUR -------------------- */
-.bannerTour {
-  background-image: url(../img/banner-tour-gorillaz.jpg); }
-
-/* -------------------- FECHAS TOUR -------------------- */
-.tour {
-  padding-bottom: 30px; }
-  .tour article .fechaTour {
-    background-color: #001964;
-    color: #ffffff;
-    padding: 20px 30px;
-    border-radius: 0 10px 10px 0;
-    background-image: url(../img/tour2.png);
-    background-repeat: repeat-y;
-    box-shadow: 5px 5px #000000;
-    margin-bottom: 25px;
-    transition: all .2s ease-in-out;
-    position: relative; }
-    .tour article .fechaTour:hover {
-      transform: scale(1.1, 1.1); }
-    .tour article .fechaTour img {
-      position: absolute;
-      left: 50% !important;
-      height: 135px;
-      margin-left: -104px;
-      top: 20%; }
-    .tour article .fechaTour time {
-      background-color: #ffffff;
-      color: #000000;
-      font-weight: bold;
-      padding: 1px 20px 3px;
-      border-radius: 10px; }
-    .tour article .fechaTour h3 {
-      font-size: 24px;
-      text-align: center;
-      padding: 15px 0 10px;
-      font-weight: bold; }
-    .tour article .fechaTour p {
-      font-size: 18px;
-      text-align: center; }
-    .tour article .fechaTour a {
-      color: #ffffff;
-      background-color: #003FF6;
-      text-transform: uppercase;
-      padding: 15px 5px;
-      width: 100%;
-      text-align: center;
-      border-radius: 10px;
-      margin-top: 15px;
-      font-weight: bold;
-      font-size: 20px;
-      display: block; }
-      .tour article .fechaTour a:hover {
-        background-color: #ffffff;
-        color: #000000; }
-
-/* -------------------- SEPARADOR TOUR -------------------- */
-.separadorTour {
-  background-image: url(../img/separador-tour-gorillaz.png); }
-
-/* -------------------- FOOTER TOUR -------------------- */
-.footerTour {
-  background-color: #001964; }
 
 .enviarTour {
   background-color: #003FF6; }
 
 .toTopTour {
-  border-left: 7px solid #003FF6;
-  border-top: 7px solid #003FF6; }
-
-/* -------------------- NOTICIAS ESTILOS PROPIOS -------------------- */
-.preloadNoticias {
-  background-color: #3A086B; }
+  border-color: #003FF6 !important; }
+  .toTopTour:hover {
+    border-color: #ffffff !important; }
 
 .headerNoticias {
   border-bottom: 3px solid #923CEB; }
   .headerNoticias .nav-link.active, .headerNoticias .nav-link:hover {
     color: #923CEB; }
+  .headerNoticias .navbar-toggler {
+    background-color: #923CEB; }
   .headerNoticias .logoNoticias a {
     animation-name: logoNoticias; }
 
@@ -452,92 +215,21 @@ footer {
     color: #ffffff; }
   100% {
     color: #923CEB; } }
-  .headerNoticias .navbar-toggler {
-    background-color: #923CEB; }
-
-/* -------------------- BANNER NOTICIAS -------------------- */
-.bannerNoticias {
-  background-image: url(../img/banner-noticias-gorillaz.jpg); }
-
-/* -------------------- NOTICIAS -------------------- */
-.noticias article {
-  margin-bottom: 15px; }
-  .noticias article img {
-    width: 100%; }
-  .noticias article h3 {
-    color: #ffffff;
-    font-size: 23px;
-    clear: both;
-    border-top-right-radius: 10px; }
-  .noticias article time {
-    font-size: 14px;
-    color: #ffffff;
-    float: left;
-    border-radius: 10px 10px 0 0; }
-  .noticias article p {
-    background-color: #EAEAEA;
-    border-radius: 0 0 10px 10px; }
-  .noticias article .seguirLeyendo {
-    text-align: center;
-    height: 65px; }
-    .noticias article .seguirLeyendo a {
-      color: #ffffff;
-      padding: 10px 20px;
-      border-radius: 0 0 10px 10px;
-      display: inline-block;
-      transition: 0.5s; }
-      .noticias article .seguirLeyendo a:hover {
-        background-color: #000000;
-        padding: 20px; }
-
-.noticias .paginado {
-  grid-area: paginado;
-  list-style: none;
-  margin-bottom: 50px;
-  display: flex;
-  flex-basis: 100%;
-  justify-content: center; }
-  .noticias .paginado li a {
-    color: #ffffff;
-    background-color: #923CEB;
-    border-radius: 10px; }
-    .noticias .paginado li a:hover {
-      background-color: #3A086B; }
-  .noticias .paginado .activo {
-    background-color: #3A086B; }
-
-.noticiasPagina time {
-  background-color: #3A086B; }
-
-.noticiasPagina h3 {
-  background-image: linear-gradient(to top, #923CEB, #3A086B); }
-
-.noticiasPagina .seguirLeyendo a {
-  background-color: #923CEB; }
-
-/* -------------------- SEPARADOR NOTICIAS -------------------- */
-.separadorNoticias {
-  background-image: url(../img/separador-noticias-gorillaz.png); }
-
-/* -------------------- FOOTER NOTICIAS -------------------- */
-.footerNoticias {
-  background-color: #3A086B; }
 
 .enviarNoticias {
   background-color: #923CEB; }
 
 .toTopNoticias {
-  border-left: 7px solid #923CEB;
-  border-top: 7px solid #923CEB; }
-
-/* -------------------- BIOGRAFÍA ESTILOS PROPIOS -------------------- */
-.preloadBiografia {
-  background-color: #7B5A08; }
+  border-color: #923CEB !important; }
+  .toTopNoticias:hover {
+    border-color: #ffffff !important; }
 
 .headerBiografia {
   border-bottom: 3px solid #DEA50D; }
   .headerBiografia .nav-link.active, .headerBiografia .nav-link:hover {
     color: #DEA50D; }
+  .headerBiografia .navbar-toggler {
+    background-color: #DEA50D; }
   .headerBiografia .logoBiografia a {
     animation-name: logoBiografia; }
 
@@ -550,84 +242,14 @@ footer {
     color: #ffffff; }
   100% {
     color: #DEA50D; } }
-  .headerBiografia .navbar-toggler {
-    background-color: #DEA50D; }
-
-/* -------------------- BANNER BIOGRAFÍA -------------------- */
-.bannerBiografia {
-  background-image: url(../img/banner-biografia-gorillaz.jpg); }
-
-/* -------------------- INTEGRANTES -------------------- */
-.historia {
-  position: relative; }
-  .historia article {
-    color: #ffffff; }
-  .historia .imagenHistoria {
-    background-color: #DCA318;
-    position: relative;
-    overflow: hidden; }
-    .historia .imagenHistoria img {
-      width: 100%;
-      position: absolute;
-      bottom: 0px; }
-  .historia .imgDamon {
-    border-top-left-radius: 20px; }
-  .historia .imgJamie {
-    border-top-right-radius: 20px; }
-  .historia p {
-    padding-bottom: 40px !important;
-    background-color: #282204;
-    line-height: 2; }
-
-.integrantes article {
-  margin-bottom: 40px;
-  position: relative; }
-  .integrantes article .integrante {
-    background-color: #282204;
-    color: #ffffff;
-    height: 100%;
-    border-radius: 20px 20px 0 0; }
-    .integrantes article .integrante img {
-      width: 100%;
-      border-radius: 20px 20px 0 0; }
-    .integrantes article .integrante h3 {
-      font-family: Gorillaz1;
-      font-size: 90px;
-      letter-spacing: 8px;
-      text-align: center;
-      text-shadow: 5px 5px #000000;
-      margin: -120px 0 40px 0; }
-    .integrantes article .integrante p {
-      line-height: 26px;
-      margin-bottom: 20px;
-      line-height: 1.8; }
-      .integrantes article .integrante p span {
-        background-color: #DEA50D;
-        text-transform: uppercase;
-        padding: 0 10px;
-        color: #000000;
-        font-weight: bold;
-        margin-right: 5px;
-        border-radius: 5px; }
-
-/* -------------------- SEPARADOR BIOGRAFÍA -------------------- */
-.separadorBiografia {
-  background-image: url(../img/separador-biografia-gorillaz.png); }
-
-/* -------------------- FOOTER BIOGRAFÍA -------------------- */
-.footerBiografia {
-  background-color: #7B5A08; }
 
 .enviarBiografia {
   background-color: #DEA50D; }
 
 .toTopBiografia {
-  border-left: 7px solid #DEA50D;
-  border-top: 7px solid #DEA50D; }
-
-/* -------------------- DISCGRAFÍA ESTILOS PROPIOS -------------------- */
-.preloadDiscografia {
-  background-color: #316321; }
+  border-color: #DEA50D !important; }
+  .toTopBiografia:hover {
+    border-color: #ffffff !important; }
 
 .headerDiscografia {
   border-bottom: 3px solid #54AA3D; }
@@ -648,60 +270,553 @@ footer {
   100% {
     color: #54AA3D; } }
 
-/* -------------------- BANNER DISCGRAFÍA -------------------- */
-.bannerDiscografia {
-  background-image: url(../img/banner-discografia-gorillaz.jpg); }
+.enviarDiscografia {
+  background-color: #54AA3D; }
 
+.toTopDiscografia {
+  border-color: #54AA3D !important; }
+  .toTopDiscografia:hover {
+    border-color: #ffffff !important; }
+
+.header404 {
+  border-bottom: 3px solid #666666; }
+  .header404 .nav-link.active, .header404 .nav-link:hover {
+    color: #666666; }
+  .header404 .navbar-toggler {
+    background-color: #666666; }
+  .header404 .logo404 a {
+    animation-name: logo404; }
+
+@keyframes logo404 {
+  0% {
+    color: #666666; }
+  25% {
+    color: #ffffff; }
+  50% {
+    color: #ffffff; }
+  100% {
+    color: #666666; } }
+
+.enviar404 {
+  background-color: #666666; }
+
+.toTop404 {
+  border-color: #666666 !important; }
+  .toTop404:hover {
+    border-color: #ffffff !important; }
+
+.footerInicio, .preloadInicio {
+  background-color: #631031; }
+
+.footerTour, .preloadTour {
+  background-color: #001964; }
+
+.footerNoticias, .preloadNoticias {
+  background-color: #3A086B; }
+
+.footerBiografia, .preloadBiografia {
+  background-color: #7B5A08; }
+
+.footerDiscografia, .preloadDiscografia {
+  background-color: #316321; }
+
+.footer404, .preload404 {
+  background-color: #333333; }
+
+@font-face {
+  font-family: 'Gorillaz';
+  src: url("../fonts/Gorillaz.eot");
+  src: url("../fonts/Gorillaz.eot?#iefix") format("embedded-opentype"), url("../fonts/Gorillaz.woff") format("woff"), url("../fonts/Gorillaz.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+*, .contenedor, .row, p, h3, h4, .container-fluid {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden; }
+  body.preloadSite {
+    overflow: hidden; }
+
+.preloadWrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9; }
+  .preloadWrapper .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px; }
+
+a {
+  text-decoration: none;
+  transition: color 0.2s linear, background-color 0.5s linear; }
+
+#video button {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+.toTop {
+  position: fixed;
+  bottom: 3px;
+  right: 25px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  margin: -15px 0 0 -15px;
+  transform: rotate(45deg);
+  border-right: none;
+  border-bottom: none;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  border-left: 7px solid;
+  border-top: 7px solid; }
+
+.modal {
+  overflow-y: scroll; }
+
+/* -------------------- HEADER -------------------- */
+header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%; }
+  header .logo {
+    margin: 4px 0 2px;
+    font-family: Gorillaz;
+    font-size: 50px; }
+    header .logo a {
+      animation-duration: 2s;
+      animation-iteration-count: infinite; }
+      header .logo a:hover {
+        color: #ffffff !important; }
+  header .navbar {
+    padding: 0 25px;
+    background-color: #000000;
+    list-style: none; }
+    header .navbar span {
+      line-height: 1.2; }
+    header .navbar .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+    header .navbar .nav-link {
+      display: inline-block;
+      margin-left: 25px;
+      padding: 0 0 0 30px !important;
+      color: #ffffff;
+      background-image: url(../img/gorillaz-vin.png);
+      background-repeat: no-repeat;
+      transition: 0.2s; }
+      header .navbar .nav-link:focus {
+        color: #ffffff; }
+  header .video {
+    margin-left: 25px; }
+
+/* -------------------- MAIN -------------------- */
+main {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 280px !important; }
+  main .bordeFin {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-image: url(../img/transparencia-banner.png);
+    background-repeat: repeat-x; }
+
+/* -------------------- CONTENIDO -------------------- */
+.contenidoPrincipal {
+  padding: 0 2%;
+  background-color: #ffffff; }
+  .contenidoPrincipal h2 {
+    padding: 25px 0 30px;
+    font-family: Gorillaz;
+    font-size: 90px;
+    letter-spacing: 8px;
+    text-align: center; }
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  color: #ffffff; }
+  footer .containerFooter {
+    padding: 65px 15px 10px;
+    background-image: url(../img/transparencia-footer.png);
+    background-repeat: repeat-x;
+    background-position: right bottom; }
+    footer .containerFooter .logoFooter .logoF {
+      margin-top: -39px;
+      font-family: Gorillaz;
+      font-size: 125px; }
+    footer .containerFooter .social {
+      padding-left: 45px; }
+      footer .containerFooter .social ul {
+        padding-left: 0;
+        list-style: none; }
+        footer .containerFooter .social ul li {
+          display: inline; }
+          footer .containerFooter .social ul li a img {
+            transition: all 1s; }
+            footer .containerFooter .social ul li a img:hover {
+              transform: rotate(360deg) scale(1.3); }
+    footer .containerFooter .imagenFooter {
+      margin-top: -10px;
+      text-align: center; }
+    footer .containerFooter .formularioFooter {
+      margin-bottom: 25px;
+      text-align: right; }
+      footer .containerFooter .formularioFooter input, footer .containerFooter .formularioFooter textarea {
+        margin-bottom: 5px;
+        padding: 3px 10px;
+        width: 80%;
+        border: none;
+        font-size: 13px; }
+      footer .containerFooter .formularioFooter textarea {
+        height: 72px; }
+      footer .containerFooter .formularioFooter .primerInput {
+        border-radius: 10px 10px 0 0; }
+      footer .containerFooter .formularioFooter .enviar {
+        padding: 10px 0;
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 0 0 10px 10px;
+        transition: 0.2s linear;
+        cursor: pointer; }
+        footer .containerFooter .formularioFooter .enviar:hover {
+          background-color: #000000; }
+  footer .copy {
+    padding: 10px 0;
+    background-color: #000000;
+    font-size: 13px;
+    text-align: center; }
+    footer .copy a {
+      color: #ffffff;
+      text-decoration: underline; }
+
+/* -------------------- INICIO ESTILOS PROPIOS -------------------- */
+/* -------------------- BANNER INICIO -------------------- */
+.bannerInicio {
+  background-position: right; }
+  .bannerInicio h2 {
+    margin: -29px 0 26px;
+    text-align: left; }
+  .bannerInicio h3 {
+    margin-bottom: 17px;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 3px 3px #000000; }
+  .bannerInicio .containerBanner {
+    display: grid;
+    grid-template-areas: "article article" "article article";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 510px; }
+    .bannerInicio .containerBanner h4 {
+      font-size: 20px;
+      font-weight: bold; }
+    .bannerInicio .containerBanner article {
+      color: #000000;
+      background-image: url(../img/tour.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all .2s ease-in-out; }
+      .bannerInicio .containerBanner article:hover {
+        transform: scale(1.1, 1.1); }
+      .bannerInicio .containerBanner article .fecha {
+        position: relative;
+        margin-left: 11px;
+        padding: 10px 15px 10px 13px;
+        background-color: #ffffff;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 3px 3px #000000; }
+        .bannerInicio .containerBanner article .fecha img {
+          position: absolute;
+          top: 2px;
+          left: 0; }
+        .bannerInicio .containerBanner article .fecha a {
+          float: left;
+          width: 100%;
+          margin-top: 8px;
+          padding: 4px 10px 6px;
+          text-transform: uppercase;
+          text-align: center;
+          color: #ffffff;
+          background-color: #631031;
+          border-radius: 10px; }
+          .bannerInicio .containerBanner article .fecha a:hover {
+            background-color: #000000; }
+
+/* -------------------- SEPARADOR INICIO -------------------- */
+.separadorInicio {
+  height: 410px;
+  background-image: url(../img/separador-gorillaz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.separadorFooterInicio {
+  background-position: left; }
+
+/* -------------------- NOTICIAS INICIO -------------------- */
+.noticiasInicio article h3 {
+  background-image: linear-gradient(to top, #C1043E, #631031); }
+
+.noticiasInicio article time {
+  background-color: #631031; }
+
+.noticiasInicio .seguirLeyendo a {
+  background-color: #C1043E; }
+
+.verTodasLasNoticias {
+  margin-bottom: 40px;
+  height: 50px;
+  text-align: center; }
+  .verTodasLasNoticias a {
+    padding: 15px 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #000000 !important;
+    border-radius: 10px;
+    transition: 0.5s; }
+    .verTodasLasNoticias a:hover {
+      padding: 20px 30px;
+      background-color: #631031 !important; }
+
+/* -------------------- TIENDAS INICIO -------------------- */
+.tiendas img {
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 10px; }
+  .tiendas img:hover {
+    transform: scaleX(-1); }
+
+/* -------------------- TOUR ESTILOS PROPIOS -------------------- */
+/* -------------------- FECHAS TOUR -------------------- */
+.tour {
+  padding-bottom: 30px; }
+  .tour article .fechaTour {
+    position: relative;
+    margin-bottom: 25px;
+    padding: 20px 30px;
+    color: #ffffff;
+    background-color: #001964;
+    background-image: url(../img/tour2.png);
+    background-repeat: repeat-y;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px #000000;
+    transition: all .2s ease-in-out; }
+    .tour article .fechaTour:hover {
+      transform: scale(1.1, 1.1); }
+    .tour article .fechaTour img {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      height: 135px;
+      margin-left: -104px; }
+    .tour article .fechaTour time {
+      padding: 1px 20px 3px;
+      color: #000000;
+      background-color: #ffffff;
+      border-radius: 10px;
+      font-weight: bold; }
+    .tour article .fechaTour h3 {
+      padding: 15px 0 10px;
+      font-size: 24px;
+      text-align: center;
+      font-weight: bold; }
+    .tour article .fechaTour p {
+      font-size: 18px;
+      text-align: center; }
+    .tour article .fechaTour a {
+      padding: 15px 5px;
+      width: 100%;
+      color: #ffffff;
+      background-color: #003FF6;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 20px;
+      display: block; }
+      .tour article .fechaTour a:hover {
+        background-color: #ffffff;
+        color: #000000; }
+
+/* -------------------- NOTICIAS ESTILOS PROPIOS -------------------- */
+/* -------------------- NOTICIAS -------------------- */
+.noticias article {
+  margin-bottom: 15px; }
+  .noticias article img {
+    width: 100%; }
+  .noticias article h3 {
+    clear: both;
+    color: #ffffff;
+    border-top-right-radius: 10px;
+    font-size: 23px; }
+  .noticias article time {
+    float: left;
+    color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    font-size: 14px; }
+  .noticias article p {
+    background-color: #EAEAEA;
+    border-radius: 0 0 10px 10px; }
+  .noticias article .seguirLeyendo {
+    height: 65px;
+    text-align: center; }
+    .noticias article .seguirLeyendo a {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #ffffff;
+      border-radius: 0 0 10px 10px;
+      transition: 0.5s; }
+      .noticias article .seguirLeyendo a:hover {
+        padding: 20px;
+        background-color: #000000; }
+
+.noticias .paginado {
+  grid-area: paginado;
+  display: flex;
+  flex-basis: 100%;
+  margin-bottom: 50px;
+  justify-content: center;
+  list-style: none; }
+  .noticias .paginado li a {
+    background-color: #923CEB;
+    color: #ffffff;
+    border-radius: 10px; }
+    .noticias .paginado li a:hover {
+      background-color: #3A086B; }
+  .noticias .paginado .activo {
+    background-color: #3A086B; }
+
+.noticiasPagina time {
+  background-color: #3A086B; }
+
+.noticiasPagina h3 {
+  background-image: linear-gradient(to top, #923CEB, #3A086B); }
+
+.noticiasPagina .seguirLeyendo a {
+  background-color: #923CEB; }
+
+/* -------------------- BIOGRAFÍA ESTILOS PROPIOS -------------------- */
+/* -------------------- INTEGRANTES -------------------- */
+.historia {
+  position: relative; }
+  .historia article {
+    color: #ffffff; }
+  .historia .imagenHistoria {
+    position: relative;
+    overflow: hidden;
+    background-color: #DEA50D; }
+    .historia .imagenHistoria img {
+      position: absolute;
+      bottom: 0px;
+      width: 100%; }
+  .historia .imgDamon {
+    border-top-left-radius: 20px; }
+  .historia .imgJamie {
+    border-top-right-radius: 20px; }
+  .historia p {
+    padding-bottom: 40px !important;
+    background-color: #282204;
+    line-height: 2; }
+
+.integrantes article {
+  position: relative;
+  margin-bottom: 40px; }
+  .integrantes article .integrante {
+    height: 100%;
+    background-color: #282204;
+    color: #ffffff;
+    border-radius: 20px 20px 0 0; }
+    .integrantes article .integrante img {
+      width: 100%;
+      border-radius: 20px 20px 0 0; }
+    .integrantes article .integrante h3 {
+      margin: -110px 0 20px;
+      font-family: Gorillaz;
+      font-size: 90px;
+      letter-spacing: 8px;
+      text-align: center;
+      text-shadow: 5px 5px #000000; }
+    .integrantes article .integrante p {
+      margin-bottom: 20px;
+      line-height: 1.7; }
+      .integrantes article .integrante p span {
+        margin-right: 5px;
+        padding: 0 10px;
+        background-color: #DEA50D;
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: bold;
+        border-radius: 5px; }
+
+/* -------------------- DISCGRAFÍA ESTILOS PROPIOS -------------------- */
 /* -------------------- DISCOS -------------------- */
 .discografia article {
-  color: #ffffff;
   margin-bottom: 50px;
+  color: #ffffff;
   text-align: center; }
   .discografia article .tapaDisco {
     position: relative;
+    padding-bottom: 0 !important;
     background-color: #316321;
-    border-radius: 20px 20px 0 0;
-    padding-bottom: 0 !important; }
+    border-radius: 20px 20px 0 0; }
     .discografia article .tapaDisco h3 {
-      font-family: Gorillaz1;
+      margin-bottom: 15px;
+      font-family: Gorillaz;
       font-size: 45px;
-      text-shadow: 4px 4px #000000;
-      margin: -10px 0 15px; }
+      text-shadow: 4px 4px #000000; }
     .discografia article .tapaDisco p {
-      background-color: #234719;
-      display: inline-block;
-      padding: 3px 10px;
       position: absolute;
       z-index: 1;
+      display: inline-block;
+      padding: 3px 10px;
       margin: 8px;
+      background-color: #234719;
       border-radius: 4px; }
     .discografia article .tapaDisco img {
+      position: relative;
       width: 100%;
-      border: 3px solid #ffffff;
-      position: relative; }
+      border: 3px solid #ffffff; }
     .discografia article .tapaDisco .listadoTemas {
       height: 65px; }
       .discografia article .tapaDisco .listadoTemas a {
-        color: #ffffff;
+        display: inline-block;
         padding: 10px 20px;
-        border-radius: 0 0 10px 10px;
-        transition: 0.5s;
         background-color: #54AA3D;
-        display: inline-block; }
+        color: #ffffff;
+        border-radius: 0 0 10px 10px;
+        transition: 0.5s; }
         .discografia article .tapaDisco .listadoTemas a:hover {
           padding: 15px 20px;
           background-color: #234719; }
     .discografia article .tapaDisco .discoFin {
-      background-image: url(../img/transparencia-disco.png);
-      background-repeat: repeat-x;
-      width: 100%;
-      height: 20px;
       position: absolute;
       bottom: -20px;
-      left: 0; }
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background-image: url(../img/transparencia-disco.png);
+      background-repeat: repeat-x; }
   .discografia article .infoDisco {
-    background-color: #316321;
-    position: relative; }
+    position: relative;
+    background-color: #316321; }
 
 .modalDiscos {
   background-color: #316321;
@@ -710,72 +825,108 @@ footer {
   .modalDiscos .modal-header {
     background-color: #234719; }
     .modalDiscos .modal-header .modal-title {
-      font-family: Gorillaz1;
+      margin: -10px 0;
+      font-family: Gorillaz;
       font-weight: normal;
       font-size: 40px;
-      text-shadow: 4px 4px #000000;
-      margin: -20px 0 -10px; }
+      text-shadow: 4px 4px #000000; }
   .modalDiscos p {
     margin: -10px 0 20px;
     font-weight: bold;
     text-align: left; }
   .modalDiscos ol {
-    list-style: none;
-    counter-reset: li;
+    width: 100%;
     display: inline-block;
     text-align: left;
-    width: 100%; }
+    list-style: none;
+    counter-reset: li; }
     .modalDiscos ol li {
-      counter-increment: li;
-      margin-bottom: 7px; }
+      margin-bottom: 7px;
+      counter-increment: li; }
       .modalDiscos ol li::before {
-        content: counter(li);
-        background-color: #54AA3D;
-        font-weight: bold;
         display: inline-block;
         margin-right: 10px;
-        text-align: center;
         width: 25px;
-        border-radius: 10px; }
+        background-color: #54AA3D;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10px;
+        content: counter(li); }
   .modalDiscos .btn {
     background-color: #234719;
     color: #ffffff; }
     .modalDiscos .btn:hover {
       background-color: #54AA3D; }
 
-/* -------------------- SEPARADOR DISCGRAFÍA -------------------- */
-.separadorDiscografia {
-  background-image: url(../img/separador-discografia-gorillaz.png); }
+/* -------------------- 404 ESTILOS PROPIOS -------------------- */
+/* -------------------- BANNER 404 -------------------- */
+.banner404 .titulo404 {
+  float: left;
+  text-align: center; }
+  .banner404 .titulo404 h2 {
+    margin-top: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-shadow: 3px 3px #000000;
+    font-weight: bold;
+    letter-spacing: 3px; }
 
-/* -------------------- FOOTER DISCGRAFÍA -------------------- */
-.footerDiscografia {
-  background-color: #316321; }
+/* -------------------- CONTENIDO 404 -------------------- */
+.contenido404 {
+  padding-bottom: 50px; }
+  .contenido404 article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    text-align: center; }
+    .contenido404 article h3 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-weight: bold; }
+  .contenido404 .vaiven {
+    animation: vaiven 2s infinite; }
 
-.enviarDiscografia {
-  background-color: #54AA3D; }
-
-.toTopDiscografia {
-  border-left: 7px solid #54AA3D;
-  border-top: 7px solid #54AA3D; }
+@keyframes vaiven {
+  15% {
+    transform: translateX(-25%) rotate(-10deg); }
+  30% {
+    transform: translateX(20%) rotate(5deg); }
+  45% {
+    transform: translateX(-10%) rotate(-3deg); }
+  60% {
+    transform: translateX(5%) rotate(2deg); }
+  75% {
+    transform: translateX(-3%) rotate(-1deg); } }
+  .contenido404 #seconds {
+    font-size: 80px;
+    font-weight: bold; }
 
 /* -------------------- MEDIA QUERIES -------------------- */
+@media (min-width: 1380px) {
+  .imgDamon img, .imgJamie img {
+    width: 75% !important; }
+  .imgJamie img {
+    right: 0; } }
+
 @media (max-width: 1200px) {
   .tour article .fechaTour {
     height: 90%; }
   .fechaTour img {
+    top: 25%;
     height: 135px;
-    margin-left: -104px;
-    top: 25%; } }
+    margin-left: -104px; } }
 
 @media (max-width: 992px) {
   header .navbar-collapse {
-    padding: 15px 25px 15px 0;
     position: absolute;
-    background-color: #000000;
-    border-bottom-left-radius: 15px;
-    top: 68px;
     z-index: 2;
-    right: 0; }
+    top: 68px;
+    right: 0;
+    padding: 15px 25px 15px 0;
+    background-color: #000000;
+    border-bottom-left-radius: 15px; }
     header .navbar-collapse .nav-item {
       margin-bottom: 10px; }
   header .video {
@@ -785,8 +936,8 @@ footer {
     main .banner {
       margin-top: 68px; }
     main .contenidoPrincipal h2 {
-      font-size: 70px;
-      padding: 10px 0; }
+      padding: 10px 0;
+      font-size: 70px; }
   .bannerDiscografia h1 {
     font-size: 90px; }
   .historia p {
@@ -794,12 +945,12 @@ footer {
   footer {
     position: initial; }
     footer .logoFooter .logoF {
-      text-align: center;
-      margin-bottom: 0 !important; }
+      margin-bottom: 0 !important;
+      text-align: center; }
     footer .social {
+      margin-bottom: 30px;
       padding-left: 0 !important;
-      text-align: center;
-      margin-bottom: 30px; }
+      text-align: center; }
     footer .formularioFooter {
       text-align: center !important; }
       footer .formularioFooter input, footer .formularioFooter textarea {
@@ -811,28 +962,24 @@ footer {
   #toTop {
     bottom: 0px; }
   .banner {
-    background-image: none;
     margin-top: 0;
-    height: auto; }
+    height: auto;
+    background-image: none; }
     .banner h1, .banner h2 {
-      margin: -25px 0 15px;
+      margin: -15px 0 5px;
       text-align: center;
       font-size: 70px; }
     .banner time {
       font-weight: bold; }
   .bannerInicio {
-    background-color: #C1043E; }
+    background-color: #C1043E;
+    text-align: center; }
+    .bannerInicio h4 {
+      font-size: 23px; }
     .bannerInicio .containerBanner {
       grid-template-areas: "article" "article" "article" "article";
-      width: auto;
-      margin-bottom: 20px; }
-    .bannerInicio h3 {
-      text-align: center; }
-    .bannerInicio h4 {
-      font-size: 23px;
-      text-align: center; }
-    .bannerInicio p {
-      text-align: center; }
+      margin-bottom: 20px;
+      width: auto; }
   .bannerNoticias {
     background-image: linear-gradient(to top, #923CEB, #3A086B); }
   .bannerTour {
@@ -840,13 +987,17 @@ footer {
   .bannerBiografia {
     background-image: linear-gradient(to top, #DEA50D, #7B5A08); }
     .bannerBiografia h1 {
-      padding-top: 18px;
+      padding: 9px 0;
       font-size: 55px; }
   .bannerDiscografia {
     background-image: linear-gradient(to top, #54AA3D, #316321); }
     .bannerDiscografia h1 {
-      padding: 27px 0 9px;
+      padding: 17px 0 19px;
       font-size: 40px; }
+  .banner404 {
+    background-image: linear-gradient(to top, #666666, #333333); }
+    .banner404 .titulo404 {
+      width: 100%; }
   ol {
     padding-left: 0; }
   .contenidoPrincipal {
@@ -860,27 +1011,23 @@ footer {
   .integrantes h2 {
     font-size: 40px !important; }
   .integrantes h3 {
-    font-size: 50px !important;
-    margin: -65px 0 40px 0 !important; }
+    margin: -55px 0 15px !important;
+    font-size: 50px !important; }
   .integrantes p span {
     display: table;
     margin-bottom: 5px; }
   .fecha img {
+    left: 50% !important;
     height: 123px;
     width: auto;
-    left: 50% !important;
     margin-left: -115px; }
   .fechaTour img {
-    height: 170px;
+    top: 12%;
     margin-left: -130px;
-    top: 12%; }
+    height: 170px; }
+  .contenido404 IMG {
+    width: 100%; }
   footer .logoFooter .logoF {
     font-size: 80px !important; }
   footer input, footer textarea {
     width: 100% !important; } }
-
-@media (min-width: 1380px) {
-  .imgDamon img, .imgJamie img {
-    width: 75% !important; }
-  .imgJamie img {
-    right: 0; } }

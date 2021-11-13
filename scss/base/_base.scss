@@ -1,12 +1,11 @@
 //File: _base.sass
 
 @font-face {
-    font-family: 'Gorillaz1';
-    src: url('../fonts/Gorillaz1.eot');
-    src: url('../fonts/Gorillaz1.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gorillaz1.woff2') format('woff2'),
-        url('../fonts/Gorillaz1.woff') format('woff'),
-        url('../fonts/Gorillaz1.ttf') format('truetype');
+    font-family: 'Gorillaz';
+    src: url('../fonts/Gorillaz.eot');
+    src: url('../fonts/Gorillaz.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gorillaz.woff') format('woff'),
+        url('../fonts/Gorillaz.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -16,13 +15,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
-    scroll-behavior: smooth;
-}
 body {
     background-color: $blanco;
     color: $negro;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
     &.preloadSite {
         overflow: hidden;
     }
@@ -38,7 +35,6 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         width: 120px;
     }
@@ -52,10 +48,9 @@ a {
         position: absolute;
         top: 10px;
         right: 10px;
-        background-color: $blanco;
     }
 }
-#toTop {
+.toTop {
     position: fixed;
     bottom: 3px;
     right: 25px;
@@ -67,10 +62,8 @@ a {
     border-right: none;
     border-bottom: none;
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,.5));
-    &:hover {
-        border-left: 7px solid $blanco;
-        border-top: 7px solid $blanco;
-    }
+    border-left: 7px solid;
+    border-top: 7px solid;
 }
 .modal {
     overflow-y: scroll;

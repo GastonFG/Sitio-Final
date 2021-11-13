@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Discografía Completa | Gorillaz | Sitio Oficial en Español</title>
 </head>
@@ -24,7 +25,7 @@
         <!-------------------- INICIO HEADER  -------------------->
         <header class="row headerDiscografia">
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
+                <div class="container-fluid" data-aos="fade-down" data-aos-duration="1000">
                     <span class="logo logoDiscografia"><a href="index.html">Gorillaz</a></span>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,7 +37,7 @@
                             <li class="nav-item"><a class="nav-link" href="noticias-novedades-gorillaz.html">Noticias</a></li>
                             <li class="nav-item"><a class="nav-link" href="biografia-historia-gorillaz.html">Biografía</a></li>
                             <li class="nav-item"><a class="nav-link active" href="discografia-completa-gorillaz.html">Discografía</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="javascript:;" id="contacto">Contacto</a></li>
                         </ul>
                         <a href="#" data-bs-toggle="modal" data-bs-target="#video" class="video"><img src="img/20-anos-gorillaz-discografia.gif" alt="Gorillaz 20 Años"></a>
                     </div>
@@ -47,12 +48,12 @@
         <!-------------------- INICIO MAIN  -------------------->
         <main class="row">
             <div class="banner bannerDiscografia">
-                <h1>Discografia</h1>
+                <h1 data-aos="fade-right" data-aos-duration="1000">Discografía</h1>
                 <div class="bordeFin"></div>
             </div>
             <section class="row contenidoPrincipal discografia">
-                <h2>Albums</h2>
-                <article class="col-lg-4 col-md-6">
+                <h2 data-aos="fade-up" data-aos-duration="1000">Albums</h2>
+                <article class="col-lg-4 col-md-6"data-aos="fade-right" data-aos-duration="1000">
                     <div class="p-3 tapaDisco">
                         <h3>Gorillaz</h3>
                         <p>Año 2001</p>
@@ -63,7 +64,7 @@
                         <div class="discoFin"></div>
                     </div>
                 </article>
-                <article class="col-lg-4 col-md-6">
+                <article class="col-lg-4 col-md-6"data-aos="fade-up" data-aos-duration="1000">
                     <div class="p-3 tapaDisco">
                         <h3>Demon Days</h3>
                         <p>Año 2005</p>
@@ -74,7 +75,7 @@
                         <div class="discoFin"></div>
                     </div>
                 </article>
-                <article class="col-lg-4 col-md-6">
+                <article class="col-lg-4 col-md-6"data-aos="fade-left" data-aos-duration="1000">
                     <div class="p-3 tapaDisco">
                         <h3>Plastic Beach</h3>
                         <p>Año 2010</p>
@@ -85,7 +86,7 @@
                         <div class="discoFin"></div>
                     </div>
                 </article>
-                <article class="col-lg-4 col-md-6">
+                <article class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="1000">
                     <div class="p-3 tapaDisco">
                         <h3>The Fall</h3>
                         <p>Año 2010</p>
@@ -96,7 +97,7 @@
                         <div class="discoFin"></div>
                     </div>
                 </article>
-                <article class="col-lg-4 col-md-6">
+                <article class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
                     <div class="p-3 tapaDisco">
                         <h3>Humanz</h3>
                         <p>Año 2017</p>
@@ -107,7 +108,7 @@
                         <div class="discoFin"></div>
                     </div>
                 </article>
-                <article class="col-lg-4 col-md-6">
+                <article class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-duration="1000">
                     <div class="p-3 tapaDisco">
                         <h3>The Now Now</h3>
                         <p>Año 2018</p>
@@ -118,9 +119,9 @@
                         <div class="discoFin"></div>
                     </div>
                 </article>
-                <article class="col-lg-4 col-md-6">
+                <article class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="1000">
                     <div class="p-3 tapaDisco">
-                        <h3>Song Machine 1</h3>
+                        <h3>Song Machine One</h3>
                         <p>Año 2020</p>
                         <img src="img/song-machine-season-one-gorillaz.jpg" alt="Song Machine Season One - Gorillaz">
                         <div class="listadoTemas">
@@ -129,8 +130,19 @@
                         <div class="discoFin"></div>
                     </div>
                 </article>
+                <article class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="p-3 tapaDisco">
+                        <h3>Song Machine Two</h3>
+                        <p>Año 2022</p>
+                        <img src="img/song-machine-season-two-gorillaz.jpg" alt="Song Machine Season Two - Gorillaz">
+                        <div class="listadoTemas">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#disco8">+ Listado de Temas</a>
+                        </div>
+                        <div class="discoFin"></div>
+                    </div>
+                </article>
             </section>
-            <div class="separador separadorFooter separadorDiscografia"></div>
+            <div class="separador separadorFooterDiscografia"></div>
         </main>
         <!-------------------- FIN MAIN -------------------->
         <!-------------------- INICIO FOOTER -------------------->
@@ -162,7 +174,7 @@
                 </div>
             </div>
             <div class="row copy">
-                <p>© 2021 - Todos los derechos reservados | Desarrollado por <a href="#" target="blank">GFG Estudio</a></p>
+                <p>© 2021 - Todos los derechos reservados | Desarrollado por <a href="#" target="blank">GFG</a></p>
             </div>
         </footer>
     <!-------------------- FIN FOOTER -------------------->
@@ -360,7 +372,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content modalDiscos">
                 <div class="modal-header">
-                    <h5 class="modal-title">Song Machine 1</h5>
+                    <h5 class="modal-title">Song Machine One</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
@@ -389,6 +401,20 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="disco8" tabindex="-1" aria-labelledby="disco8" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modalDiscos">
+                <div class="modal-header">
+                    <h5 class="modal-title">Song Machine Two</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p>Estamos trabajando en los temas del nuevo disco, pronto tendrás novedades!</p>
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="video" tabindex="-1" aria-labelledby="video" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -399,9 +425,10 @@
     </div>
     <!-------------------- FIN MODALS --------------------> 
     <div id="contacto"></div>
-    <a id="toTop" class="toTopDiscografia" href="#" style="display: none;"></a>
+    <a id="toTop" class="toTop toTopDiscografia" href="javascript:;" style="display: none;"></a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

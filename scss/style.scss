@@ -1,14 +1,16 @@
 @import "base/variables";
+@import "base/mixins";
 @import "base/base";
 
 @import "layout/header";
 @import "layout/main";
 @import "layout/footer";
 
-@import "pages/inicio";
+@import "pages/index";
 @import "pages/tour";
 @import "pages/noticias";
 @import "pages/biografia";
 @import "pages/discografia";
+@import "pages/404";
 
 @import "media-queries/media-queries";
