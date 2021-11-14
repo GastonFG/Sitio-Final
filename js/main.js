@@ -55,4 +55,4 @@ function modal(v){
 };
 
 // Iniciar Librería AOS
-AOS.init({disable: 'mobile'});
+//AOS.init({disable: 'mobile'});
