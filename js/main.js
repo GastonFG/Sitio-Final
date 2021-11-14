@@ -55,4 +55,9 @@ function modal(v){
 };
 
 // Iniciar Librería AOS
-//AOS.init({disable: 'mobile'});
+AOS.init({
+    disable: function() {
+      var maxWidth = 992;
+      return window.innerWidth < maxWidth;
+    }
+  });
